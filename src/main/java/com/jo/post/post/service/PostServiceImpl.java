@@ -36,6 +36,7 @@ public class PostServiceImpl implements PostService{
     @Transactional
     @Override
     public List<Post> findAllPost() {
+        log.info("findAll Post");
         return postRepository.findAll();
     }
 
